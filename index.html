@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket - Local Alert Mesh</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 20px; background-color: #f4f4f9; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h2 { color: #d9534f; }
+        button { padding: 15px 30px; font-size: 16px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 5px; margin: 10px; width: 80%; max-width: 300px; }
+        button:hover { background: #0056b3; }
+        #status { margin-top: 20px; font-weight: bold; color: #333; padding: 10px; border-radius: 5px; background: #eee; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Sanket P2P Mesh</h2>
+        <p>Zero-internet local broadcasting.</p>
+
+        <button id="createRoomBtn">1. Start Broadcast (Host)</button>
+        <br>
+        <button id="joinRoomBtn">2. Join Broadcast (Receiver)</button>
+
+        <div id="status">Status: Disconnected</div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
